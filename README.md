@@ -8,9 +8,9 @@
 ### The data was extracted and transformed in Postgres, transferred to a new csv file and that csv file was used to create the visualization.
 
 ## All corresponding files can be found in the main branch of the GitHub page. Here are the files to reference for the final work:
-README
-index.html
-logic.js
+README | 
+index.html |
+logic.js |
 style.css
 
 ## You will see below information on our data sources:
