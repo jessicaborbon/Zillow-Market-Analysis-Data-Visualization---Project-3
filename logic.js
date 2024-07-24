@@ -10,14 +10,14 @@
        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
    }).addTo(myMap);
 
-// Define the legend content for each selected period
+// legend content for each selected period
 const legendContent = {
-    '2006-2009': `<h1>Phoenix Housing Market Analysis</h1><img src="markers.png" style="width: 300px; height: auto;"><hr><h3> 2006-2009 Recession Period </br> - Overall Average Percentage Change in Market Value for SFH: -48% </br> - Overall Average Market Price for SFH: -$123,678.76 </br> Click on each marker to see exact pricing for each area in Phoenix. <h3>`,
-    '2009-2019': `<h1>Phoenix Housing Market Analysis</h1><img src="markers.png" style="width: 300px; height: auto;"><hr><h3> 2009-2019 Recovery Period </br> - Overall Average Percentage Change in Market Value for SFH: 138% </br> - Overall Average Market Price for SFH: $157,136.34 </br> Click on each marker to see exact pricing for each area in Phoenix. <h3>`,
-    '2019-2023': `<h1>Phoenix Housing Market Analysis</h1><img src="markers.png" style="width: 300px; height: auto;"><hr><h3> 2019-2023 COVID-19 Period </br> - Overall Average Percentage Change in Market Value for SFH: 59% </br> - Overall Average Market Price for SFH: $181,224.55 </br> Click on each marker to see exact pricing for each area in Phoenix. <h3>`
+    '2006-2009': `<h1>Phoenix Housing Market Analysis</h1><img src="markers.png" style="width: 300px; height: auto;"><h2> &nbsp;> -35%&nbsp;&nbsp;&nbsp; -45%&nbsp;&nbsp;&nbsp;< -45%&nbsp;&nbsp;&nbsp < -55% </h1><h3><hr> </br> 2006-2009 Recession Period </br> - Overall Average Percentage Change in Market Value for SFH: -48% </br> - Overall Average Market Price for SFH: -$123,678.76 </br> Click on each marker to see exact pricing for each area in Phoenix. <h3>`,
+    '2009-2019': `<h1>Phoenix Housing Market Analysis</h1><img src="markers.png" style="width: 300px; height: auto;"><h2> &nbsp; < 50%&nbsp;&nbsp;&nbsp; > 50%&nbsp;&nbsp;&nbsp;< 100% &nbsp;&nbsp;&nbsp >200%% </h1><h3><hr></br> 2009-2019 Recovery Period </br> - Overall Average Percentage Change in Market Value for SFH: 138% </br> - Overall Average Market Price for SFH: $157,136.34 </br> Click on each marker to see exact pricing for each area in Phoenix. <h3>`,
+    '2019-2023': `<h1>Phoenix Housing Market Analysis</h1><img src="markers.png" style="width: 300px; height: auto;"><<h2> &nbsp; < 50%&nbsp;&nbsp;&nbsp; > 50%&nbsp;&nbsp;&nbsp;< = 60% &nbsp;&nbsp;&nbsp >60%%</h1><h3><hr> </br>2019-2023 COVID-19 Period </br> - Overall Average Percentage Change in Market Value for SFH: 59% </br> - Overall Average Market Price for SFH: $181,224.55 </br> Click on each marker to see exact pricing for each area in Phoenix. <h3>`
 };
 
-// Create a custom legend control
+//legend control
 const legend = L.control({ position: 'bottomright' });
 
 legend.onAdd = function (map) {
@@ -32,23 +32,23 @@ legend.addTo(myMap);
 //set the customer icon
 const greenIcon = L.icon({
     iconUrl: 'img/greenIcon.png',
-    iconSize: [20, 25]
+    iconSize: [30, 47]
   });
   const yellowIcon = L.icon({
     iconUrl: 'img/yellowIcon.png',
-    iconSize: [20, 25]
+    iconSize: [30, 47]
   });
   const blueIcon = L.icon({
     iconUrl: 'img/blueIcon.png',
-    iconSize: [20, 25]
+    iconSize: [30, 47]
   });
   const orangeIcon = L.icon({
     iconUrl: 'img/orangeIcon.png',
-    iconSize: [20, 25]
+    iconSize: [30, 47]
   });
   const pinkIcon = L.icon({
     iconUrl: 'img/pinkIcon.png',
-    iconSize: [20, 25]
+    iconSize: [30, 47]
   });
 
 // Load data from the CSV file
