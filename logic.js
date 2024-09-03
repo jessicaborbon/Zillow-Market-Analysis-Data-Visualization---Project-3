@@ -1,4 +1,3 @@
-
 // Creating the map object
  let myMap = L.map("map", {
      center: [33.4484, -112.0740],
